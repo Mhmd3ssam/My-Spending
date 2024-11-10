@@ -2,17 +2,15 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {Text, View, TouchableOpacity} from 'react-native';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 
 import Debts from '../Screens/Debts';
-import Transactions from '../Screens/Transactions';
+import {TransactionsStack} from './TransactionsStack';
 
-import {Routes} from './routs';
 import {styles} from './styles';
+import {Routes} from '../Helpers/routs';
+
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const TabBarButton = ({children, accessibilityState, onPress}) => {
@@ -26,37 +24,19 @@ const TabBarButton = ({children, accessibilityState, onPress}) => {
   );
 };
 
-const MyTheme = {
-  ...DefaultTheme,
-  dark: true,
-  colors: {
-    primary: '#7B68EE',
-    background: '#fff',
-    card: '#000000',
-    text: '#ffffff',
-    border: 'transparent',
-    notification: '#7B68EE',
-  },
-};
-
-function TapNavigation() {
+export function TapNavigation() {
   const Tab = createBottomTabNavigator();
 
   return (
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: styles.tabBar,
-        tabBarShowLabel: true,
-        tabBarActiveTintColor: '#ffffff',
-        tabBarInactiveTintColor: 'rgba(255, 255, 255, 0.6)',
-        headerStyle: styles.header,
         tabBarButton: props => <TabBarButton {...props} />,
-        tabBarLabelStyle: styles.tabBarLabel,
         headerBackground: () => <View style={styles.headerBackground} />,
       }}>
       <Tab.Screen
-        name={Routes.Transactions}
-        component={Transactions}
+        name={Routes.TransactionsStack}
+        component={TransactionsStack}
         options={{
           tabBarLabel: ({focused}) => (
             <Text
@@ -64,9 +44,7 @@ function TapNavigation() {
               Home
             </Text>
           ),
-          headerTitle: () => (
-            <Text style={styles.headerTitleText}>Transactions</Text>
-          ),
+          headerShown: false,
           tabBarIcon: () => <Icon />,
         }}
       />
@@ -87,22 +65,3 @@ function TapNavigation() {
     </Tab.Navigator>
   );
 }
-
-function StackNavigation() {
-  const Stack = createStackNavigator();
-
-  return (
-    <SafeAreaProvider>
-      <NavigationContainer theme={MyTheme}>
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-          }}>
-          <Stack.Screen name={Routes.Tabs} component={TapNavigation} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaProvider>
-  );
-}
-
-export default StackNavigation;

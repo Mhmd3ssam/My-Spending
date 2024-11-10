@@ -49,4 +49,10 @@ export const styles = StyleSheet.create({
   tabBarLabelActive: {
     color: '#047bfb',
   },
+  headerTitle: {
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
 });

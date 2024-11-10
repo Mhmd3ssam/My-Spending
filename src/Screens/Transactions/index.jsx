@@ -1,14 +1,14 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
-
-import {View, Text} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+
+import TransactionsList from './Components/TransactionsList';
 
 function Transactions() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.text}>Transactions Screen </Text>
+        <TransactionsList />
       </View>
     </SafeAreaView>
   );

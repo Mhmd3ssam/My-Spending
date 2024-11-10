@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FinanceTrackerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FinanceTrackerAppTests.m */; };
+		02DFF52B1B6704A77BAA41A9 /* libPods-FinanceTrackerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 062218F787410025E8C389BB /* libPods-FinanceTrackerApp.a */; };
 		0C463BF1A916BE9D170AAB47 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		73682CB056C2CAF3C795B88F /* libPods-FinanceTrackerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40D61BAC97A690E398D9B03 /* libPods-FinanceTrackerApp.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A97EEEF43CBA2E33F6D3287A /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38221179DB00D1B4B4821A1 /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a */; };
+		E78A0B9D31F4AD77C7029C1D /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0674C2EE5774B32A317CA5FE /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,8 @@
 		00E356EE1AD99517003FC87E /* FinanceTrackerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTrackerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FinanceTrackerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinanceTrackerAppTests.m; sourceTree = "<group>"; };
-		0A522C04CD192B457AE8D55C /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		062218F787410025E8C389BB /* libPods-FinanceTrackerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinanceTrackerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0674C2EE5774B32A317CA5FE /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinanceTrackerApp-FinanceTrackerAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* FinanceTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FinanceTrackerApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = FinanceTrackerApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,13 +40,12 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FinanceTrackerApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FinanceTrackerApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = FinanceTrackerApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		2D79B18C848536C3A6B2C169 /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72FAEFE9ABD33FE7A1B8C063 /* Pods-FinanceTrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FinanceTrackerApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		922B5FB210FBFDBE97CF1E1C /* Pods-FinanceTrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A40D61BAC97A690E398D9B03 /* libPods-FinanceTrackerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinanceTrackerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD4DCA3D1D4567AA694B193 /* Pods-FinanceTrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp.release.xcconfig"; sourceTree = "<group>"; };
-		B38221179DB00D1B4B4821A1 /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinanceTrackerApp-FinanceTrackerAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95B94757FCF5301BBD47EC2 /* Pods-FinanceTrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E4ABA69D64E70193244CD155 /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FEA89F834F24C9202D129B9D /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A97EEEF43CBA2E33F6D3287A /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a in Frameworks */,
+				E78A0B9D31F4AD77C7029C1D /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73682CB056C2CAF3C795B88F /* libPods-FinanceTrackerApp.a in Frameworks */,
+				02DFF52B1B6704A77BAA41A9 /* libPods-FinanceTrackerApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				A40D61BAC97A690E398D9B03 /* libPods-FinanceTrackerApp.a */,
-				B38221179DB00D1B4B4821A1 /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a */,
+				062218F787410025E8C389BB /* libPods-FinanceTrackerApp.a */,
+				0674C2EE5774B32A317CA5FE /* libPods-FinanceTrackerApp-FinanceTrackerAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				922B5FB210FBFDBE97CF1E1C /* Pods-FinanceTrackerApp.debug.xcconfig */,
-				ABD4DCA3D1D4567AA694B193 /* Pods-FinanceTrackerApp.release.xcconfig */,
-				2D79B18C848536C3A6B2C169 /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig */,
-				0A522C04CD192B457AE8D55C /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig */,
+				A95B94757FCF5301BBD47EC2 /* Pods-FinanceTrackerApp.debug.xcconfig */,
+				72FAEFE9ABD33FE7A1B8C063 /* Pods-FinanceTrackerApp.release.xcconfig */,
+				E4ABA69D64E70193244CD155 /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig */,
+				FEA89F834F24C9202D129B9D /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FinanceTrackerAppTests" */;
 			buildPhases = (
-				3444325651775EEC587C85E8 /* [CP] Check Pods Manifest.lock */,
+				A5C5B863381B9B7F98CA7206 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				625C67AC3B01F4A096D3E789 /* [CP] Embed Pods Frameworks */,
-				08A96506C7C943CD9ABEA926 /* [CP] Copy Pods Resources */,
+				E0A83FDAD4F59A324BF4E6D3 /* [CP] Embed Pods Frameworks */,
+				F4A5CBB56CCBED98D9EB2784 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,13 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FinanceTrackerApp" */;
 			buildPhases = (
-				8D9E5B74F57F9B2C44CCA1F8 /* [CP] Check Pods Manifest.lock */,
+				B0C049942008F54A6DE07ADE /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				F80A63938F0BC7B69DDBD381 /* [CP] Embed Pods Frameworks */,
-				477DFBBEC64000F8820D9C77 /* [CP] Copy Pods Resources */,
+				8905BE4723EDFB947BF658EB /* [CP] Embed Pods Frameworks */,
+				27A400F990349DBB7EF8E5C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,24 +269,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		08A96506C7C943CD9ABEA926 /* [CP] Copy Pods Resources */ = {
+		27A400F990349DBB7EF8E5C7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3444325651775EEC587C85E8 /* [CP] Check Pods Manifest.lock */ = {
+		8905BE4723EDFB947BF658EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C5B863381B9B7F98CA7206 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,41 +325,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		477DFBBEC64000F8820D9C77 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		625C67AC3B01F4A096D3E789 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D9E5B74F57F9B2C44CCA1F8 /* [CP] Check Pods Manifest.lock */ = {
+		B0C049942008F54A6DE07ADE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,21 +347,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F80A63938F0BC7B69DDBD381 /* [CP] Embed Pods Frameworks */ = {
+		E0A83FDAD4F59A324BF4E6D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp/Pods-FinanceTrackerApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A5CBB56CCBED98D9EB2784 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTrackerApp-FinanceTrackerAppTests/Pods-FinanceTrackerApp-FinanceTrackerAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,7 +414,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D79B18C848536C3A6B2C169 /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig */;
+			baseConfigurationReference = E4ABA69D64E70193244CD155 /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -441,7 +441,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A522C04CD192B457AE8D55C /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig */;
+			baseConfigurationReference = FEA89F834F24C9202D129B9D /* Pods-FinanceTrackerApp-FinanceTrackerAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -465,7 +465,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 922B5FB210FBFDBE97CF1E1C /* Pods-FinanceTrackerApp.debug.xcconfig */;
+			baseConfigurationReference = A95B94757FCF5301BBD47EC2 /* Pods-FinanceTrackerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -493,7 +493,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABD4DCA3D1D4567AA694B193 /* Pods-FinanceTrackerApp.release.xcconfig */;
+			baseConfigurationReference = 72FAEFE9ABD33FE7A1B8C063 /* Pods-FinanceTrackerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

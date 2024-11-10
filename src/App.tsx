@@ -1,14 +1,19 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import {Provider} from 'react-redux';
-import {store} from './store';
-import Transactions from './modules/Transactions';
+import { Provider } from 'react-redux';
+import { View } from 'react-native';
+import StackNavigation from './Routes/Navigation';
+import { store } from './Store';
 
-const App = () => {
+function App() {
+
   return (
-    <Provider store={store}>
-      <Transactions />
-    </Provider>
+    <View style={{ flex: 1, backgroundColor: '#fff' }}>
+      <Provider store={store}>
+        <StackNavigation />
+      </Provider>
+    </View>
   );
-};
+}
 
 export default App;

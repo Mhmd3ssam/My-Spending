@@ -13,4 +13,3 @@ export const transactionsSlice = createSlice({
 });
 export const {incrementCount} = transactionsSlice.actions;
 export const transactionsSelector = state => state.transactions;
-

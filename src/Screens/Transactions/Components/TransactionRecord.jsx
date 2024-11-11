@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unstable-nested-components */
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-
-import {View, Text, StyleSheet, Image, FlatList} from 'react-native';
-import {getCategoryIcon} from '../../../Helpers/helpers';
+import {Text, Layout} from '@ui-kitten/components';
+import {StyleSheet, Image, FlatList, View} from 'react-native';
 import {transaction_type} from '../../../Helpers/constant';
+import {getCategoryIcon, convertDate} from '../../../Helpers/helpers';
 
 function TransactionRecord({record}) {
   const renderItem = ({item}) => (
-    <View style={styles.detailsContainer}>
+    <Layout style={styles.detailsContainer}>
       <View style={styles.categoryContainer}>
         <View style={styles.iconWrapper}>
           <Image
@@ -18,7 +18,7 @@ function TransactionRecord({record}) {
         </View>
         <View>
           <Text style={styles.category}>{item.category}</Text>
-          <Text style={styles.note}>{item.note}</Text>
+          <Text style={styles.description}>{item.description}</Text>
           <Text style={styles.time}>{item.time}</Text>
         </View>
       </View>
@@ -27,23 +27,25 @@ function TransactionRecord({record}) {
         <Text
           style={{
             color:
-              item.transaction_type === transaction_type.earning
+              item.transaction_type === transaction_type[0].value
                 ? '#0db90d'
                 : '#d95c63',
             fontWeight: 'bold',
           }}>
-          {item.transaction_type === transaction_type.earning
-            ? `+ ${item.price} $`
-            : `- ${item.price} $`}
+          {item.transaction_type === transaction_type[0].value
+            ? `+ ${item.amount} $`
+            : `- ${item.amount} $`}
         </Text>
       </View>
-    </View>
+    </Layout>
   );
   return (
     <View style={styles.conainer}>
       <View style={styles.summeryContainer}>
-        <Text style={styles.summeryContent}>{record.created_at}</Text>
-        <Text style={styles.summeryContent}>{record.totla_transaction}</Text>
+        <Text style={styles.summeryContent}>
+          {convertDate(record?.created_at)}
+        </Text>
+        <Text style={styles.summeryContent}>{record?.totla_transaction}</Text>
       </View>
       <View style={{flex: 1}}>
         <FlatList
@@ -67,10 +69,11 @@ const styles = StyleSheet.create({
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginTop: 2,
   },
   summeryContent: {
     color: '#707070',
-    fontWeight: 'bold',
+    fontWeight: 'condensedBold',
     marginHorizontal: 15,
   },
   detailsContainer: {
@@ -78,7 +81,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 10,
     paddingVertical: 15,
-    backgroundColor: '#fffffd',
   },
   categoryContainer: {
     flexDirection: 'row',
@@ -107,7 +109,7 @@ const styles = StyleSheet.create({
     color: '#000',
     textTransform: 'capitalize',
   },
-  note: {
+  description: {
     color: '#707070',
     fontSize: 10,
   },

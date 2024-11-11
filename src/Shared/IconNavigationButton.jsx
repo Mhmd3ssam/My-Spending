@@ -1,6 +1,7 @@
 import React from 'react';
-import {Button, Icon} from '@ui-kitten/components';
 import PropTypes from 'prop-types';
+
+import {Button, Icon} from '@ui-kitten/components';
 
 export const IconNavigationButton = ({
   disabled = false,

@@ -5,11 +5,8 @@ import * as Yup from 'yup';
 
 import {useNavigation} from '@react-navigation/native';
 
-import {useDispatch, useSelector} from 'react-redux';
-import {
-  addTransactions,
-  transactionsSelector,
-} from '../../Store/transactionsSlice';
+import {useDispatch} from 'react-redux';
+import {addTransactions} from '../../Store/transactionsSlice';
 
 import {StyleSheet, View, ScrollView} from 'react-native';
 import {Layout, Button} from '@ui-kitten/components';
@@ -27,8 +24,6 @@ import {categories, transaction_type} from '../../Helpers/constant';
 import {Routes} from '../../Helpers/routs';
 
 function AddTransaction() {
-  const {transactionsList} = useSelector(transactionsSelector);
-
   const dispatch = useDispatch();
   const navigation = useNavigation();
 

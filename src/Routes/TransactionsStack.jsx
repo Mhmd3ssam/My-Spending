@@ -3,6 +3,9 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {Text, View} from 'react-native';
 
+import {useSelector} from 'react-redux';
+import {transactionsSelector} from '../Store/transactionsSlice';
+
 import {createStackNavigator} from '@react-navigation/stack';
 
 import Transactions from '../Screens/Transactions';
@@ -16,6 +19,7 @@ import {Icon} from '@ui-kitten/components';
 
 export function TransactionsStack() {
   const Stack = createStackNavigator();
+  const {transactionsList} = useSelector(transactionsSelector);
 
   return (
     <Stack.Navigator
@@ -29,12 +33,14 @@ export function TransactionsStack() {
           headerTitle: () => (
             <View style={styles.headerTitle}>
               <Text style={styles.headerTitleText}>Transactions</Text>
-              <IconNavigationButton
-                iconName="plus-outline"
-                onPress={() => navigation.navigate(Routes.AddTransaction)}
-                status="basic"
-                size="small"
-              />
+              {Object.keys(transactionsList).length !== 0 && (
+                <IconNavigationButton
+                  iconName="plus-outline"
+                  onPress={() => navigation.navigate(Routes.AddTransaction)}
+                  status="basic"
+                  size="small"
+                />
+              )}
             </View>
           ),
         })}

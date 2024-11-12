@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unstable-nested-components */
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {Text, Layout} from '@ui-kitten/components';
@@ -45,14 +44,16 @@ function TransactionRecord({record}) {
         <Text style={styles.summeryContent}>
           {convertDate(record?.created_at)}
         </Text>
-        <Text style={styles.summeryContent}>{record?.totla_transaction}</Text>
+        <Text
+          style={
+            styles.summeryContent
+          }>{`${record?.totla_transaction} $`}</Text>
       </View>
-      <View style={{flex: 1}}>
+      <View>
         <FlatList
           data={record.transaction}
           renderItem={renderItem}
           keyExtractor={(item, index) => index.toString()}
-          ItemSeparatorComponent={() => <View style={styles.separator} />}
         />
       </View>
     </View>
@@ -61,8 +62,9 @@ function TransactionRecord({record}) {
 
 const styles = StyleSheet.create({
   conainer: {
-    gap: 4,
-    margin: 20,
+    gap: 1,
+    marginHorizontal: 20,
+    marginVertical: 5,
   },
   summeryContainer: {
     flexDirection: 'row',
@@ -72,15 +74,19 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   summeryContent: {
-    color: '#707070',
-    fontWeight: 'condensedBold',
+    fontWeight: 'bold',
     marginHorizontal: 15,
+    color: '#232B5D',
+    fontSize: 12,
   },
   detailsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 10,
     paddingVertical: 15,
+    elevation: 1,
+    borderRadius: 10,
+    marginVertical: 5,
   },
   categoryContainer: {
     flexDirection: 'row',

@@ -31,7 +31,7 @@ My-Spending is a React Native app designed to help you track your spending effor
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/My-Spending.git
+   git clone https://github.com/Mhmd3ssam/My-Spending.git
    cd My-Spending
    ```
 

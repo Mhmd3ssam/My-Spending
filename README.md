@@ -24,23 +24,27 @@ This README showcases the journey through the My-Spending app, highlighting key 
 
 The home screen shows an empty state when no transactions are recorded yet. This encourages users to start adding their financial data.
 
-![Empty Home Screen](public/EmptyState.png)
+<img src="public/EmptyState.png" alt="Empty Home Screen" width="200" />
 
 ## 2. Add Transaction
 
-Here you can add a new transaction, specifying the category, amount, date, discraption, and time.
+Here you can add a new transaction, specifying the category, amount, date, description, and time.
 
-![Add Transaction](public/AddTransaction1.png)
-![Add Transaction](public/AddTransaction2.png)
-![Add Transaction](public/AddTransaction3.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="public/AddTransaction1.png" alt="Add Transaction" width="200" />
+  <img src="public/AddTransaction2.png" alt="Add Transaction" width="200" />
+  <img src="public/AddTransaction3.png" alt="Add Transaction" width="200" />
+</div>
 
 ## 3. Daily Spending
 
 This screen shows a breakdown of your spending for the day.
 
-![Daily Spending](public/DailySpending1.png)
-![Daily Spending](public/DailySpending2.png)
-![Daily Spending](public/DailySpending3.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="public/DailySpending1.png" alt="Daily Spending" width="200" />
+  <img src="public/DailySpending2.png" alt="Daily Spending" width="200" />
+  <img src="public/DailySpending3.png" alt="Daily Spending" width="200" />
+</div>
 
 ## Features
 

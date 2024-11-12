@@ -6,6 +6,7 @@ My-Spending is a React Native app designed to help you track your spending effor
 
 ## Table of Contents
 
+- [App Journey](#My-Spending-App-Journey)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,6 +15,32 @@ My-Spending is a React Native app designed to help you track your spending effor
 - [Author](#author)
 
 ---
+
+# My-Spending App Journey
+
+This README showcases the journey through the My-Spending app, highlighting key screens and features.
+
+## 1. Home Screen (Empty State)
+
+The home screen shows an empty state when no transactions are recorded yet. This encourages users to start adding their financial data.
+
+![Empty Home Screen](public/EmptyState.png)
+
+## 2. Add Transaction
+
+Here you can add a new transaction, specifying the category, amount, date, discraption, and time.
+
+![Add Transaction](public/AddTransaction1.png)
+![Add Transaction](public/AddTransaction2.png)
+![Add Transaction](public/AddTransaction3.png)
+
+## 3. Daily Spending
+
+This screen shows a breakdown of your spending for the day.
+
+![Daily Spending](public/DailySpending1.png)
+![Daily Spending](public/DailySpending2.png)
+![Daily Spending](public/DailySpending3.png)
 
 ## Features
 

@@ -18,7 +18,7 @@ export const SelectInput = ({
   helperText = '',
   options = [],
   placement = 'bottom',
-  style,
+  style = {},
 }) => {
   const renderOption = useMemo(
     () =>

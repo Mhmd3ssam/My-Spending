@@ -45,7 +45,7 @@ export function TapNavigation() {
             </Text>
           ),
           headerShown: false,
-          tabBarIcon: () => <Icon />,
+          tabBarIcon: ({focused}) => <Icon />,
         }}
       />
       <Tab.Screen
@@ -59,7 +59,7 @@ export function TapNavigation() {
             </Text>
           ),
           headerTitle: () => <Text style={styles.headerTitleText}>Debts</Text>,
-          tabBarIcon: () => <Icon />,
+          tabBarIcon: ({focused}) => <Icon />,
         }}
       />
     </Tab.Navigator>

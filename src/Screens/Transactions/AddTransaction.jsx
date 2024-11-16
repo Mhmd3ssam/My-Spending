@@ -59,8 +59,6 @@ function AddTransaction() {
               onChange={amount => formik.setFieldValue('amount', amount)}
               min={0}
               max={10000}
-              error={formik.touched.category && !!formik.errors.category}
-              helperText={formik.touched.category && formik.errors.category}
             />
           </View>
           <View style={styles.input}>
@@ -71,8 +69,6 @@ function AddTransaction() {
               options={categories}
               value={formik.values.category}
               onChange={category => formik.setFieldValue('category', category)}
-              error={formik.touched.category && !!formik.errors.category}
-              helperText={formik.touched.category && formik.errors.category}
             />
           </View>
           <View style={styles.input}>
@@ -84,14 +80,6 @@ function AddTransaction() {
               value={formik.values.transaction_type}
               onChange={transactionType =>
                 formik.setFieldValue('transaction_type', transactionType)
-              }
-              error={
-                formik.touched.transaction_type &&
-                !!formik.errors.transaction_type
-              }
-              helperText={
-                !!formik.touched.transaction_type &&
-                formik.errors.transaction_type
               }
             />
           </View>
@@ -112,8 +100,6 @@ function AddTransaction() {
               value={formik.values.created_at}
               onChange={date => formik.setFieldValue('created_at', date)}
               min={new Date(1900, 0, 1)}
-              error={formik.touched.created_at && !!formik.errors.created_at}
-              helperText={formik.touched.created_at && formik.errors.created_at}
             />
           </View>
           <View style={styles.input}>
@@ -125,8 +111,6 @@ function AddTransaction() {
               onChange={time => {
                 formik.setFieldValue('time', time);
               }}
-              error={formik.touched.time && !!formik.errors.time}
-              helperText={formik.touched.time && formik.errors.time}
               is24Hour={true}
             />
           </View>
